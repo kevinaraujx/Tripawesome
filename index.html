@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripawesome: O melhor para sua viagem.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icons8-ao-redor-do-globo-48.png" type="image/x-icon">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <a href="#" class="logo">Tripawesome</a>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="Video/Pexels-Beachvideo.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h1>Explore o Mundo</h1>
+            <h2>Aventura é um caminho</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aut dolor ducimus pariatur, dolore in! Voluptatum itaque fuga, doloremque accusamus totam atque voluptas ab ut? Repellendus tempora debitis adipisci laboriosam.</p>
+            <a href="#">Saiba Mais</a>
+        </div>
+    </section>
+
+    <div class="menu">
+        <ul class="itens-menu">
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Destinos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
